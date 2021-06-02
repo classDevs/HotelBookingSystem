@@ -1,0 +1,12 @@
+
+#menu{
+	list-style-type:none;
+	font-size:18px;
+	background-color:blue;
+	font-style: italic;
+}
+
+#menu li{
+	display:inline;
+}
+

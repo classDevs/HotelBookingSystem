@@ -1,0 +1,21 @@
+SIMPLE ONLINE HOTEL RESERVATION SYSTEM IN PHP
+
+
+Login Details
+
+Username: admin
+Password: admin
+
+
+Developed By aek426rahmani
+
+DON'T FORGET TO CREATE A DATABASE NAMING "db_hor" AND IMPORT THE DATBASE SQL FILE.
+WITHOUT THE DATABASE THE PROJECT WON'T RUN.
+
+***** IF YOU FIND ANY ERRORS OR ANY PROBLEMS RELATED THIS PROGRAM, FEEL FREE TO CONTACT US *****  
+
+***** Email : rahmaniabdelkaderseifelislem@gmail.com *****
+
+
+
+#THANK YOU FOR DOWNLOADING
