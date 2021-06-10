@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
-		<title>Hotel Online Reservation</title>
+		<title>Réservation d'hôtel en ligne</title>
 		<meta charset = "utf-8" />
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css " />
@@ -11,22 +11,22 @@
 	<nav style = "background-color:rgba(0, 0, 0, 0.1);" class = "navbar navbar-default">
 		<div  class = "container-fluid">
 			<div class = "navbar-header">
-				<a class = "navbar-brand" >Hotel Online Reservation</a>
+				<a class = "navbar-brand" >Réservation d'hôtel en ligne</a>
 			</div>
 		</div>
 	</nav>	
 	<ul id = "menu">
-		<li><a href = "index.php">Home</a></li> |
-		<li><a href = "aboutus.php">About us</a></li> |
-		<li><a href = "contactus.php">Contact us</a></li> |
-		<li><a href = "gallery.php">Gallery</a></li> |			
-		<li><a href = "reservation.php">Make a reservation</a></li> |
-		<li><a href = "rulesandregulation.php">Rules and Regulation</a></li>
+		<li><a href = "index.php">Domicile</a></li> |
+		<li><a href = "aboutus.php">À propos de nous</a></li> |
+		<li><a href = "contactus.php">Contactez-nous</a></li> |
+		<li><a href = "gallery.php">Galerie</a></li> |			
+		<li><a href = "reservation.php">Faire une réservation</a></li> |
+		<li><a href = "rulesandregulation.php">Règles et règlement</a></li>
 	</ul>
 	<div style = "margin-left:0;" class = "container">
 		<div class = "panel panel-default">
 			<div class = "panel-body">
-				<strong><h3>MAKE A RESERVATION</h3></strong>
+				<strong><h3>Faire une réservation</h3></strong>
 				<?php
 					require_once 'admin/connect.php';
 					$query = $conn->query("SELECT * FROM `room` ORDER BY `price` ASC") or die(mysql_error());
@@ -38,9 +38,9 @@
 						</div>
 						<div style = "float:left; margin-left:10px;">
 							<h3><?php echo $fetch['room_type']?></h3>
-							<h4 style = "color:#00ff00;"><?php echo "Price: ".$fetch['price'].".00  DA"?></h4>
+							<h4 style = "color:#00ff00;"><?php echo "Prix: ".$fetch['price'].".00  DA"?></h4>
 							<br /><br /><br /><br /><br /><br />
-							<a style = "margin-left:580px;" href = "add_reserve.php?room_id=<?php echo $fetch['room_id']?>" class = "btn btn-info"><i class = "glyphicon glyphicon-list"></i> Reserve</a>
+							<a style = "margin-left:580px;" href = "add_reserve.php?room_id=<?php echo $fetch['room_id']?>" class = "btn btn-info"><i class = "glyphicon glyphicon-list"></i> Réserve</a>
 						</div>
 					</div>
 				<?php
@@ -52,7 +52,7 @@
 	<br />
 	<br />
 	<div style = "text-align:right; margin-right:10px;" class = "navbar navbar-default navbar-fixed-bottom">
-		<label>&copy; Copyright Hotel Online Reservation 2021 </label>
+		<label>&copy; Copyright Réservation d'hôtel en ligne 2021 </label>
 	</div>
 </body>
 <script src = "js/jquery.js"></script>

@@ -5,7 +5,7 @@
 ?>
 <html lang = "en">
 	<head>
-		<title>Hotel Online Reservation</title>
+		<title>Réservation d'hôtel en ligne</title>
 		<meta charset = "utf-8" />
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
 		<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.css " />
@@ -15,13 +15,13 @@
 	<nav style = "background-color:rgba(0, 0, 0, 0.1);" class = "navbar navbar-default">
 		<div  class = "container-fluid">
 			<div class = "navbar-header">
-				<a class = "navbar-brand" >Hotel Online Reservation</a>
+				<a class = "navbar-brand" >Réservation d'hôtel en ligne</a>
 			</div>
 			<ul class = "nav navbar-nav pull-right ">
 				<li class = "dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class = "glyphicon glyphicon-user"></i> <?php echo $name;?></a>
 					<ul class="dropdown-menu">
-						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Logout</a></li>
+						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Se Déconnecter</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -29,10 +29,10 @@
 	</nav>
 	<div class = "container-fluid">	
 		<ul class = "nav nav-pills">
-			<li class = "active"><a href = "home.php">Home</a></li>
-			<li><a href = "account.php">Accounts</a></li>
+			<li class = "active"><a href = "home.php">Domicile</a></li>
+			<li><a href = "account.php">Comptes</a></li>
 			<li><a href = "reserve.php">Reservation</a></li>
-			<li><a href = "room.php">Room</a></li>			
+			<li><a href = "room.php">Chambre</a></li>			
 		</ul>	
 	</div>
 	<br />
@@ -46,7 +46,7 @@
 	<br />
 	<br />
 	<div style = "text-align:right; margin-right:10px;" class = "navbar navbar-default navbar-fixed-bottom">
-		<label>&copy; Copyright Hotel Online Reservation 2021 </label>
+		<label>&copy; Copyright Réservation d'hôtel en ligne 2021 </label>
 	</div>
 </body>
 <script src = "../js/jquery.js"></script>

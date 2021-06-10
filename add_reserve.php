@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
-		<title>Hotel Online Reservation</title>
+		<title>Réservation d'hôtel en ligne</title>
 		<meta charset = "utf-8" />
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
 		<link rel = "stylesheet" type = "text/css" href = "css/bootstrap.css " />
@@ -11,22 +11,22 @@
 	<nav style = "background-color:rgba(0, 0, 0, 0.1);" class = "navbar navbar-default">
 		<div  class = "container-fluid">
 			<div class = "navbar-header">
-				<a class = "navbar-brand" >Hotel Online Reservation</a>
+				<a class = "navbar-brand" >Réservation d'hôtel en ligne</a>
 			</div>
 		</div>
 	</nav>	
 	<ul id = "menu">
-		<li><a href = "index.php">Home</a></li> |
-		<li><a href = "aboutus.php">About us</a></li> |
-		<li><a href = "contactus.php">Contact us</a></li> |
-		<li><a href = "gallery.php">Gallery</a></li> |
-		<li><a href = "reservation.php">Make a reservation</a></li> |
-		<li><a href = "rulesandregulation.php">Rules and Regulation</a></li>
+		<li><a href = "index.php">Domicile</a></li> |
+		<li><a href = "aboutus.php">À propos de nous</a></li> |
+		<li><a href = "contactus.php">Contactez-nous</a></li> |
+		<li><a href = "gallery.php">Galerie</a></li> |
+		<li><a href = "reservation.php">Faire une réservation</a></li> |
+		<li><a href = "rulesandregulation.php">Règles et règlement</a></li>
 	</ul>
 	<div style = "margin-left:0;" class = "container">
 		<div class = "panel panel-default">
 			<div class = "panel-body">
-				<strong><h3>MAKE A RESERVATION</h3></strong>
+				<strong><h3>FAIRE UNE RÉSERVATION</h3></strong>
 				<br />
 				<?php 
 					require_once 'admin/connect.php';
@@ -46,32 +46,28 @@
 				<div class = "well col-md-4">
 					<form method = "POST" enctype = "multipart/form-data">
 						<div class = "form-group">
-							<label>Firstname</label>
+							<label>Prénom</label>
 							<input type = "text" class = "form-control" name = "firstname" required = "required" />
 						</div>
 						<div class = "form-group">
-							<label>Middlename</label>
-							<input type = "text" class = "form-control" name = "middlename" required = "required" />
-						</div>
-						<div class = "form-group">
-							<label>Lastname</label>
+							<label>Nom</label>
 							<input type = "text" class = "form-control" name = "lastname" required = "required" />
 						</div>
 						<div class = "form-group">
-							<label>Address</label>
+							<label>Adresse</label>
 							<input type = "text" class = "form-control" name = "address" required = "required" />
 						</div>
 						<div class = "form-group">
-							<label>Contact No</label>
+							<label>Telephone</label>
 							<input type = "text" class = "form-control" name = "contactno" required = "required" />
 						</div>
 						<div class = "form-group">
-							<label>Check in</label>
+							<label>Enregistrer</label>
 							<input type = "date" class = "form-control" name = "date" required = "required" />
 						</div>
 						<br />
 						<div class = "form-group">
-							<button class = "btn btn-info form-control" name = "add_guest"><i class = "glyphicon glyphicon-save"></i> Submit</button>
+							<button class = "btn btn-info form-control" name = "add_guest"><i class = "glyphicon glyphicon-save"></i> Soumettre</button>
 						</div>
 					</form>
 				</div>
@@ -83,7 +79,7 @@
 	<br />
 	<br />
 	<div style = "text-align:right; margin-right:10px;" class = "navbar navbar-default navbar-fixed-bottom">
-		<label>&copy; Copyright Hotel Online Reservation 2021 </label>
+		<label>&copy; Copyright Réservation d'hôtel en ligne 2021 </label>
 	</div>
 </body>
 <script src = "js/jquery.js"></script>

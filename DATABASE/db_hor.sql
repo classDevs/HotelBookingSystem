@@ -117,8 +117,8 @@ CREATE TABLE `transaction` (
 --
 
 INSERT INTO `transaction` (`transaction_id`, `guest_id`, `room_id`, `room_no`, `extra_bed`, `status`, `days`, `checkin`, `checkin_time`, `checkout`, `checkout_time`, `bill`) VALUES
-(1, 1, 5, 5, 1, 'Check Out', 15, '2021-06-30', '01:39:03', '2021-06-14', '02:31:25', '60800'),
-(3, 4, 1, 15, 7, 'Check Out', 3, '2021-06-18', '18:54:35', '2021-06-05', '18:56:00', '11600');
+(1, 1, 5, 5, 1, 'Vérifier', 15, '2021-06-30', '01:39:03', '2021-06-14', '02:31:25', '60800'),
+(3, 4, 1, 15, 7, 'Vérifier', 3, '2021-06-18', '18:54:35', '2021-06-05', '18:56:00', '11600');
 
 --
 -- Indexes for dumped tables

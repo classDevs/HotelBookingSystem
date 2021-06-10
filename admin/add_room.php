@@ -5,7 +5,7 @@
 ?>
 <html lang = "en">
 	<head>
-		<title>Hotel Online Reservation</title>
+		<title>Réservation d'hôtel en ligne</title>
 		<meta charset = "utf-8" />
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
 		<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.css " />
@@ -15,13 +15,13 @@
 	<nav style = "background-color:rgba(0, 0, 0, 0.1);" class = "navbar navbar-default">
 		<div  class = "container-fluid">
 			<div class = "navbar-header">
-				<a class = "navbar-brand" >Hotel Online Reservation</a>
+				<a class = "navbar-brand" >Réservation d'hôtel en ligne</a>
 			</div>
 			<ul class = "nav navbar-nav pull-right ">
 				<li class = "dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class = "glyphicon glyphicon-user"></i> <?php echo $name;?></a>
 					<ul class="dropdown-menu">
-						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Logout</a></li>
+						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Deconnecter</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -29,37 +29,37 @@
 	</nav>
 	<div class = "container-fluid">	
 		<ul class = "nav nav-pills">
-			<li><a href = "home.php">Home</a></li>
-			<li><a href = "account.php">Accounts</a></li>
+			<li><a href = "home.php">Domicile</a></li>
+			<li><a href = "account.php">Comptes</a></li>
 			<li><a href = "reserve.php">Reservation</a></li>
-			<li><a href = "room.php">Room</a></li>			
+			<li><a href = "room.php">Chambre</a></li>			
 		</ul>	
 	</div>
 	<br />
 	<div class = "container-fluid">
 		<div class = "panel panel-default">
 			<div class = "panel-body">
-				<div class = "alert alert-info">Transaction / Room / Add Room</div>
+				<div class = "alert alert-info">Transaction / Chambre / Ajouter Une Chambre</div>
 				<br />
 				<div class = "col-md-4">	
 					<form method = "POST" enctype = "multipart/form-data">
 						<div class = "form-group">
-							<label>Room Type </label>
+							<label>Type de Chambre</label>
 							<select class = "form-control" required = required name = "room_type">
-								<option value = "">Choose an option</option>
+								<option value = "">Choisis une option</option>
 								<option value = "Standard">Standard</option>
-								<option value = "Superior">Superior</option>
-								<option value = "Super Deluxe">Super Deluxe</option>
-								<option value = "Jr. Suite">Jr. Suite</option>
-								<option value = "Executive Suite">Executive Suite</option>
+								<option value = "Superior">Supérieure</option>
+								<option value = "Super Deluxe">Super De Luxe</option>
+								<option value = "Jr. Suite">Suite Junior</option>
+								<option value = "Executive Suite">Suite exécutive</option>
 							</select>
 						</div>
 						<div class = "form-group">
-							<label>Price </label>
+							<label>Prix </label>
 							<input type = "number" min = "0" max = "999999999" class = "form-control" name = "price" />
 						</div>
 						<div class = "form-group">
-							<label>Photo </label>
+							<label>Image </label>
 							<div id = "preview" style = "width:150px; height :150px; border:1px solid #000;">
 								<center id = "lbl">[Photo]</center>
 							</div>
@@ -67,7 +67,7 @@
 						</div>
 						<br />
 						<div class = "form-group">
-							<button name = "add_room" class = "btn btn-info form-control"><i class = "glyphicon glyphicon-save"></i> Saved</button>
+							<button name = "add_room" class = "btn btn-info form-control"><i class = "glyphicon glyphicon-save"></i> Enregistré</button>
 						</div>
 					</form>
 					<?php require_once 'add_query_room.php'?>
@@ -78,7 +78,7 @@
 	<br />
 	<br />
 	<div style = "text-align:right; margin-right:10px;" class = "navbar navbar-default navbar-fixed-bottom">
-		<label>&copy; Copyright Hotel Online Reservation 2021 </label>
+		<label>&copy; Copyright Réservation d'hôtel en ligne 2021 </label>
 	</div>
 </body>
 <script src = "../js/jquery.js"></script>
